@@ -1,0 +1,386 @@
+/*основний колір тексту #212121 
+другорядний колір тексту #757575
+колір фону команди background: #F5F4FA
+колір фону футера background: #2F303A
+колір акценту #2196F3
+-----------------------------------------
+основний font - Roboto 400, 500, 700 
+logo font - Raleway 700
+----------------------------------------*/
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196F3;
+  --footer-bg-color: #2F303A;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
+
+/*--------HEADER-----------*/
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 87px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.logo-blue {
+  color: var(--accent-color);
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.address-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--secondary-text-color);
+  font-style: normal;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+.flex {
+  display: flex;
+
+}
+
+.nav,
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.address-list {
+  display: flex;
+}
+
+.address-link {
+  display: block;
+}
+
+.header-address {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.address-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*--------MAIN-----------*/
+/*--------SECTION HERO-----------*/
+.hero {
+  background-color: var(--footer-bg-color);
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  width: 200px;
+  padding: 10px 27px;
+  background-color: var(--accent-color);
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------PREFERENCE-ПЕРЕВАГИ--------*/
+.preference-list {
+  display: flex;
+  padding-top: 93px;
+}
+
+.preference-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.preference-icon {
+  padding: 25px 100px;
+}
+
+.preference-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.preference-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.70;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+}
+
+.wraper-image {
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+/*------ЧИМ ЗАЙМАЄМОСЯ--JOB-----*/
+.job-title {
+  padding-top: 90px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.job-list {
+  margin-top: 50px;
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.job-list .job-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*------НАША КОМАНДА-TEAM----------*/
+.team {
+  background-color: #F5F4FA;
+  padding-bottom: 92px;
+}
+
+.team-title {
+  padding-top: 94px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.team-title-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-work {
+  margin: 0;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.team-list .item {
+  /* border: 1px solid transparent; */
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+
+/*-----КЛІЄНТИ--CLIENTS---*/
+.clients-title {
+  padding-top: 96px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color)
+}
+
+.clients-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*-----FOOTER---------*/
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  display: inline-block;
+  line-height: 1.19;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 148px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+
+.footer-address .item {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-wraper {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.join-list {
+  display: flex;
+}
+
+.address-wraper {
+  padding-top: 60px;
+}
+
+.join-social {
+  padding-top: 72px;
+}
+
+.join-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.join-list .item:not(:last-child) {
+  margin-right: 10px;
+}
