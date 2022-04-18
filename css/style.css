@@ -55,7 +55,7 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /*--------HEADER-----------*/
@@ -92,6 +92,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding: 32px 0px;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .nav-link:hover,
@@ -339,6 +343,7 @@ ul {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   margin: 0;
+
 }
 
 
@@ -351,6 +356,14 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text {
+  margin-bottom: 9px;
+}
+
+.mail {
+  margin-bottom: 9px;
 }
 
 .footer-wraper {
@@ -383,4 +396,72 @@ ul {
 
 .join-list .item:not(:last-child) {
   margin-right: 10px;
+}
+
+/*------PORTFOLIO---------*/
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.radio {
+  text-align: center;
+  padding-top: 93px;
+  padding-bottom: 50px;
+}
+
+.radio>.btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.60;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+  background: #F5F4FA;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.btn {
+  display: block;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+}
+
+.radio>.btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.radio>.btn:hover,
+.radio>.btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+/*---------MAIN-PAGE-----------*/
+.main-list .link {
+  display: block;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-list .list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.list-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  text-align: center;
+  text-decoration: none;
 }

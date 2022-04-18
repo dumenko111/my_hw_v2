@@ -7,33 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>WEB Studio</title>
 </head>
 
 <body>
+
+
+
   <!--HEADER-->
   <header class="header">
-    <!--Header nav-->
     <div class="container">
-      <nav class="nav">
-        <a class="logo" href="./index.html"><span class="logo-blue">Web </span>Studio</a>
-        <ul class="nav-list">
-          <li class="item"><a class="nav-link" href="./index.html">Студія</a></li>
-          <li class="item"><a class="nav-link current" href="">Портфоліо</a></li>
-          <li class="item"><a class="nav-link" href="">Контакти</a></li>
-        </ul>
+      <div class="flex">
+        <nav class="nav">
+          <a class="logo" href="./index.html"><span class="logo-blue">Web </span>Studio</a>
+          <ul class="nav-list">
+            <li class="item"><a class="nav-link" href="./index.html">Студія</a></li>
+            <li class="item"><a class="nav-link current" href="">Портфоліо</a></li>
+            <li class="item"><a class="nav-link" href="">Контакти</a></li>
+          </ul>
+        </nav>
         <address class="header-address">
-          <ul class="header-address list">
-            <li><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <ul class="address-list">
+            <li class="item"><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
-      </nav>
+      </div>
     </div>
   </header>
+
+
+
+
   <!--MAIN-->
   <div class="container">
     <main>
@@ -44,8 +53,11 @@
         <a href="" class="btn">Дизайн</a>
         <a href="" class="btn">Маркетинг</a>
       </div>
+
+
+
       <section class="main-page">
-        <ul class="list">
+        <ul class="main-list">
           <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio1.jpg" alt="laptop"
                 class="userpic">
               <p class="list-text">Технокряк </p>
@@ -95,29 +107,41 @@
       </section>
     </main>
   </div>
+
+
+
+
+
   <footer class="footer">
-    <div class="container">
-      <a class="logo" href="./index.html"><span class="logo-blue">Web </span><span class="logo-white">Studio</span></a>
-      <address class="footer-address"><span>м. Київ, пр-т Лесі Українки, 26</span><br>
-        <a class="item" href="mailto:info@devstudio.com">info@example.com</a><br>
-        <a class="item" href="tel:+380991111111">+38 067 111 11 11</a>
-      </address>
-      <b class="join">ПРИЄДНУЙТЕСЯ</b>
-      <ul>
-        <li><a href=""><img src="./icons/Ellipse1.svg" alt="instagram"></a></li>
-        <li><a href=""><img src="./icons/Ellipse2.svg" alt="twitter"></a></li>
-        <li><a href=""><img src="./icons/Ellipse3.svg" alt="facebook"></a></li>
-        <li><a href=""><img src="./icons/Ellipse4.svg" alt="linkedin"></a></li>
-      </ul>
-      <div class="footer-form">
-        <b class="join">
-          Підпишіться на розсилку
-        </b>
-        <input class="footer-input" type="text">
-        <a href="" class="hero-button">Підписатися</a>
+    <div class="container footer-wraper">
+
+      <div class="address-wraper">
+        <a class="footer-logo" href="./index.html"><span class="logo-blue">Web </span><span
+            class="logo-white">Studio</span></a>
+        <address class="footer-address">
+          <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+          <a class="item mail" href="mailto:info@devstudio.com">info@example.com</a>
+          <a class="item" href="tel:+380991111111">+38 067 111 11 11</a>
+        </address>
       </div>
+
+
+
+      <div class="join-social">
+        <p class="join-title">ПРИЄДНУЙТЕСЯ</p>
+        <ul class="join-list">
+          <li class="item"><a href=""><img src="./icons/Ellipse1.svg" alt="instagram"></a></li>
+          <li class="item"><a href=""><img src="./icons/Ellipse2.svg" alt="twitter"></a></li>
+          <li class="item"><a href=""><img src="./icons/Ellipse3.svg" alt="facebook"></a></li>
+          <li class="item"><a href=""><img src="./icons/Ellipse4.svg" alt="linkedin"></a></li>
+        </ul>
+      </div>
+
     </div>
   </footer>
+
+
+
 </body>
 
 </html>
