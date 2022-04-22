@@ -45,63 +45,87 @@
 
   <!--MAIN-->
   <div class="container">
+    <!--кнопки-->
     <main>
-      <div class="radio">
-        <a href="" class="btn">Всі</a>
-        <a href="" class="btn">Веб-сайти</a>
-        <a href="" class="btn">Програми</a>
-        <a href="" class="btn">Дизайн</a>
-        <a href="" class="btn">Маркетинг</a>
-      </div>
+      <ul class="radio">
+        <li class="item"><a href="" class="btn">Всі</a></li>
+        <li class="item"><a href="" class="btn">Веб-сайти</a></li>
+        <li class="item"><a href="" class="btn">Програми</a></li>
+        <li class="item"><a href="" class="btn">Дизайн</a></li>
+        <li class="item"><a href="" class="btn">Маркетинг</a></li>
+      </ul>
 
+
+
+      <h2>overflow: hidden; це якщо ми задаємо border всьому li</h2>
+      <p>і взагалі то бордер треба задавати не всьому li, обгорнути наприклад технокряк і веб сайт в окремий div і йому
+        задати border </p>
 
 
       <section class="main-page">
         <ul class="main-list">
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio1.jpg" alt="laptop"
-                class="userpic">
-              <p class="list-text">Технокряк </p>
-              <p>Веб-сайт</p>
+          <li class="main-item"><a href="" class="link">
+              <img class="userpic" src="./portfolio/portfolio1.jpg" alt="laptop">
+              <div class="gallery-text">
+                <p class="main-text">Технокряк </p>
+                <p class="item-text">Веб-сайт</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio2.jpg" alt="basketboll"
-                class="userpic">
-              <p class="list-text">Постер New Orlean vs Golden Star </p>
-              <p>Дизайн</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio2.jpg"
+                alt="basketboll">
+              <div class="gallery-text">
+                <p class="main-text">Постер New Orlean vs Golden Star </p>
+                <p class="item-text">Дизайн</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio3.jpg" alt="seafood"
-                class="userpic">
-              <p class="list-text">Ресторан Seafood </p>
-              <p>Додаток</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio3.jpg"
+                alt="seafood">
+              <div class="gallery-text">
+                <p class="main-text">Ресторан Seafood </p>
+                <p class="item-text">Додаток</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio4.jpg" alt="проект Prime logo"
-                class="userpic">
-              <p class="list-text">Проєкт Prime </p>
-              <p>Маркетинг</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio4.jpg"
+                alt="проект Prime logo">
+              <div class="gallery-text">
+                <p class="main-text">Проєкт Prime </p>
+                <p class="item-text">Маркетинг</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio5.jpg" alt="проект Boxes logo"
-                class="userpic">
-              <p class="list-text">Проєкт Boxes </p>
-              <p>Додаток</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio5.jpg"
+                alt="проект Boxes logo">
+              <div class="gallery-text">
+                <p class="main-text">Проєкт Boxes </p>
+                <p class="item-text">Додаток</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio6.jpg" alt="Веб сайт monitor"
-                class="userpic">
-              <p class="list-text">Inspiration has no Borders </p>
-              <p>Веб-сайт</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio6.jpg"
+                alt="Веб сайт monitor">
+              <div class="gallery-text">
+                <p class="main-text">Inspiration has no Borders </p>
+                <p class="item-text">Веб-сайт</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio7.jpg"
-                alt="Видавництво Limited edition" class="userpic">
-              <p class="list-text">Видавництво Limited Edition </p>
-              <p>Сайт</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio7.jpg"
+                alt="Видавництво Limited edition">
+              <div class="gallery-text">
+                <p class="main-text">Видавництво Limited Edition </p>
+                <p class="item-text">Сайт</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio8.jpg" alt="Проект Lab"
-                class="userpic">
-              <p class="list-text">Проєкт LAB </p>
-              <p>Маркетинг</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio8.jpg"
+                alt="Проект Lab">
+              <div class="gallery-text">
+                <p class="main-text">Проєкт LAB </p>
+                <p class="item-text">Маркетинг</p>
+              </div>
             </a></li>
-          <li class="list-item"><a href="" class="link"><img src="./portfolio/portfolio9.jpg" alt="Growing busines"
-                class="userpic">
-              <p class="list-text">Growing Business </p>
-              <p>Додаток</p>
+          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio9.jpg"
+                alt="Growing busines">
+              <div class="gallery-text">
+                <p class="main-text">Growing Business </p>
+                <p class="item-text">Додаток</p>
+              </div>
             </a></li>
         </ul>
       </section>
