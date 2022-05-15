@@ -21,19 +21,30 @@
   <!--HEADER-->
   <header class="header">
     <div class="container">
-      <div class="flex">
+      <div class="header-wraper">
         <nav class="nav">
           <a class="logo" href="./index.html"><span class="logo-blue">Web </span>Studio</a>
           <ul class="nav-list">
             <li class="item"><a class="nav-link" href="./index.html">Студія</a></li>
-            <li class="item"><a class="nav-link current" href="">Портфоліо</a></li>
+            <li class="item"><a class="nav-link current" href="./portfolio.html">Портфоліо</a></li>
             <li class="item"><a class="nav-link" href="">Контакти</a></li>
           </ul>
         </nav>
         <address class="header-address">
           <ul class="address-list">
-            <li class="item"><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="item"><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a class="address-link" href="mailto:info@devstudio.com">
+                <svg class="address-list-icon" width="16" height="12">
+                  <use href="./icons/symbol-defs (1).svg#iconenvelope"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+
+            <li class="item">
+              <a class="address-link" href="tel:+380961111111">
+                <svg class="address-list-icon" width="10" height="15">
+                  <use href="./icons/symbol-defs (1).svg#iconsmartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -48,80 +59,121 @@
     <!--кнопки-->
     <main>
       <ul class="radio">
-        <li class="item"><a href="" class="btn">Всі</a></li>
-        <li class="item"><a href="" class="btn">Веб-сайти</a></li>
-        <li class="item"><a href="" class="btn">Програми</a></li>
-        <li class="item"><a href="" class="btn">Дизайн</a></li>
-        <li class="item"><a href="" class="btn">Маркетинг</a></li>
+        <li class="item"><button class="btn">Всі</button></li>
+        <li class="item"><button class="btn">Веб-сайти</button></li>
+        <li class="item"><button class="btn">Програми</button></li>
+        <li class="item"><button class="btn">Дизайн</button></li>
+        <li class="item"><button class="btn">Маркетинг</button></li>
       </ul>
 
 
-
-      <h2>overflow: hidden; це якщо ми задаємо border всьому li</h2>
-      <p>і взагалі то бордер треба задавати не всьому li, обгорнути наприклад технокряк і веб сайт в окремий div і йому
-        задати border </p>
 
 
       <section class="main-page">
         <ul class="main-list">
           <li class="main-item"><a href="" class="link">
-              <img class="userpic" src="./portfolio/portfolio1.jpg" alt="laptop">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio1.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Технокряк </p>
                 <p class="item-text">Веб-сайт</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio2.jpg"
-                alt="basketboll">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio2.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Постер New Orlean vs Golden Star </p>
                 <p class="item-text">Дизайн</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio3.jpg"
-                alt="seafood">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio3.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Ресторан Seafood </p>
                 <p class="item-text">Додаток</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio4.jpg"
-                alt="проект Prime logo">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio4.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Проєкт Prime </p>
                 <p class="item-text">Маркетинг</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio5.jpg"
-                alt="проект Boxes logo">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio5.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Проєкт Boxes </p>
                 <p class="item-text">Додаток</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio6.jpg"
-                alt="Веб сайт monitor">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio6.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Inspiration has no Borders </p>
                 <p class="item-text">Веб-сайт</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio7.jpg"
-                alt="Видавництво Limited edition">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio7.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Видавництво Limited Edition </p>
                 <p class="item-text">Сайт</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio8.jpg"
-                alt="Проект Lab">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio8.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Проєкт LAB </p>
                 <p class="item-text">Маркетинг</p>
               </div>
             </a></li>
-          <li class="main-item"><a href="" class="link"><img class="userpic" src="./portfolio/portfolio9.jpg"
-                alt="Growing busines">
+          <li class="main-item"><a href="" class="link">
+              <div class="wrapper-img">
+                <img class="userpic" src="./portfolio/portfolio9.jpg" alt="laptop">
+                <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
+                  цю платформу для цифрового шпигунства та
+                  атак на захищені сервери конкурентів.</p>
+              </div>
               <div class="gallery-text">
                 <p class="main-text">Growing Business </p>
                 <p class="item-text">Додаток</p>
@@ -154,15 +206,44 @@
       <div class="join-social">
         <p class="join-title">ПРИЄДНУЙТЕСЯ</p>
         <ul class="join-list">
-          <li class="item"><a href=""><img src="./icons/Ellipse1.svg" alt="instagram"></a></li>
-          <li class="item"><a href=""><img src="./icons/Ellipse2.svg" alt="twitter"></a></li>
-          <li class="item"><a href=""><img src="./icons/Ellipse3.svg" alt="facebook"></a></li>
-          <li class="item"><a href=""><img src="./icons/Ellipse4.svg" alt="linkedin"></a></li>
+          <li class="item"><a class="social-link" aria-label="instagram" href="https://www.instagram.com/">
+              <svg class="join-icon" width="20" height="20">
+                <use href="./icons/symbol-defs (1).svg#iconinstagram"></use>
+              </svg></a></li>
+          <li class="item"><a class="social-link" aria-label="twitter" href="https://twitter.com/?lang=uk">
+              <svg class="join-icon" width="20" height="20">
+                <use href="./icons/symbol-defs (1).svg#icontwitter"></use>
+              </svg></a></li>
+          <li class="item"><a class="social-link" aria-label="facebook" href="https://www.facebook.com/">
+              <svg class="join-icon" width="20" height="20">
+                <use href="./icons/symbol-defs (1).svg#iconfacebook"></use>
+              </svg></a></li>
+          <li class="item"><a class="social-link" aria-label="linkedin"
+              href="https://www.linkedin.com/feed/?trk=nav_logo">
+              <svg class="join-icon" width="20" height="20">
+                <use href="./icons/symbol-defs (1).svg#iconlinkedin"></use>
+              </svg></a></li>
         </ul>
+      </div>
+
+      <div class="subscribe">
+        <b class="subscribe-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
+        <div class="subscribe-wraper">
+          <input type="email" class="subscribe-input" placeholder="  E-mail">
+          <button class="subscribe-button" type="button">
+            <span class="subscribe-button-text">Підписатися</span>
+            <svg class="subscribe-plane" width="24" height="24">
+              <use href="./icons/symbol-defs (1).svg#iconicon-send"></use>
+            </svg></button>
+        </div>
       </div>
 
     </div>
   </footer>
+
+
+
+
 
 
 
