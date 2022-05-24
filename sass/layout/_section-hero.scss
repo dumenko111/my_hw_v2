@@ -1,0 +1,32 @@
+/*--------SECTION HERO-----------*/
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8),
+            rgba(47, 48, 58, 0.8)),
+        url(../images/Headerimg1.jpg);
+}
+
+.hero-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title {
+    font-size: 44px;
+    max-width: 696px;
+    color: #ffffff;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}

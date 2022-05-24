@@ -1,0 +1,44 @@
+/*------PREFERENCE-ПЕРЕВАГИ--------*/
+.preference-list {
+    display: flex;
+    padding-top: 93px;
+}
+
+.preference-list .item {
+    width: 270px;
+}
+
+
+.preference-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.preference-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+
+.preference-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.preference-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.70;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+    margin: 0;
+}

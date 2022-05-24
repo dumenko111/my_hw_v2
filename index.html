@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <title>WEB Studio</title>
 </head>
 
@@ -372,8 +371,8 @@
 
       <div class="form-container">
         <div class="form">
-          <input type="text" class="field" placeholder=" ">
-          <label class="name-label">Ім'я</label>
+          <input type="text" class="field" id="name" placeholder=" ">
+          <label for="name" class="name-label">Ім'я</label>
           <svg class="name-icon" width="12" height="12">
             <use href="./icons/modal_icon/symbol-defs.svg#icon-man"></use>
           </svg>
@@ -381,8 +380,8 @@
         </div>
 
         <div class="form">
-          <input type="tel" class="field" placeholder=" ">
-          <label class="name-label">Телефон</label>
+          <input type="tel" class="field" id="tel" placeholder=" ">
+          <label for="tel" class="name-label">Телефон</label>
           <svg class="name-icon" width="12" height="12">
             <use href="./icons/modal_icon/symbol-defs.svg#icon-phone"></use>
           </svg>
@@ -390,8 +389,8 @@
         </div>
 
         <div class="form">
-          <input type="email" class="field" id="name" placeholder=" " autocomplete="off">
-          <label for="name" class="name-label">Пошта</label>
+          <input type="email" class="field" id="email" placeholder=" " autocomplete="off">
+          <label for="email" class="name-label">Пошта</label>
           <svg class="name-icon" width="12" height="12">
             <use href="./icons/modal_icon/symbol-defs.svg#icon-mail"></use>
           </svg>
@@ -403,8 +402,6 @@
         </div>
       </div>
 
-
-
       <div class="wraper-checkbox">
         <label class="label-checkbox">
           <input class="checkbox" type="checkbox">
@@ -413,9 +410,6 @@
             <a class="checkbox-link" href="">Умови договору</a></span>
         </label>
       </div>
-
-
-
 
       <button class="hero-button send-modal">Відправити</button>
     </div>
