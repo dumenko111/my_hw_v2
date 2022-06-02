@@ -18,36 +18,57 @@
 
 
   <!--HEADER-->
-  <header class="header">
-    <div class="container">
-      <div class="header-wraper">
-        <nav class="nav">
-          <a class="logo" href="./index.html"><span class="logo-blue">Web </span>Studio</a>
-          <ul class="nav-list">
-            <li class="item"><a class="nav-link" href="./index.html">Студія</a></li>
-            <li class="item"><a class="nav-link current" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="nav-link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <address class="header-address">
-          <ul class="address-list">
-            <li class="item">
-              <a class="address-link" href="mailto:info@devstudio.com">
-                <svg class="address-list-icon" width="16" height="12">
-                  <use href="./icons/symbol-defs (1).svg#iconenvelope"></use>
-                </svg>info@devstudio.com</a>
-            </li>
-
-            <li class="item">
-              <a class="address-link" href="tel:+380961111111">
-                <svg class="address-list-icon" width="10" height="15">
-                  <use href="./icons/symbol-defs (1).svg#iconsmartphone"></use>
-                </svg>+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+  <header class="header header-line">
+    <div class="head container">
+      <div class="logo-wrapper">
+        <a class="logo" href="./index.html"><span class="logo-blue">Web </span>Studio</a>
+        <!--БУРГЕР---МЕНЮ----->
+        <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="icon-cross" href="./icons/menu_icon/symbol-defs.svg#icon-close_40px"></use>
+              <use class="icon-menu" href="./icons/menu_icon/symbol-defs.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
       </div>
+  
+          <nav class="nav" id="menu-container" data-menu>
+            <ul class="nav-list">
+              <li class="item"><a class="nav-link" href="./index.html">Студія</a></li>
+              <li class="item"><a class="nav-link current" href="./portfolio.html">Портфоліо</a></li>
+              <li class="item"><a class="nav-link" href="">Контакти</a></li>
+            </ul>
+          
+          <address class="header-address">
+            <ul class="address-list">
+              <li class="item">
+                <a class="address-link" href="mailto:info@devstudio.com">
+                  <svg class="address-list-icon" width="16" height="12">
+                    <use href="./icons/symbol-defs (1).svg#iconenvelope"></use>
+                  </svg>info@devstudio.com</a>
+              </li>
+  
+              <li class="item">
+                <a class="address-link" href="tel:+380961111111">
+                  <svg class="address-list-icon" width="10" height="15">
+                    <use href="./icons/symbol-defs (1).svg#iconsmartphone"></use>
+                  </svg>+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </nav>
     </div>
+    
+      
   </header>
 
 
@@ -55,14 +76,14 @@
 
   <!--MAIN-->
   <div class="container">
-    <!--кнопки-->
+    <!--BUTTONS-->
     <main>
       <ul class="radio">
-        <li class="item"><button class="btn">Всі</button></li>
-        <li class="item"><button class="btn">Веб-сайти</button></li>
-        <li class="item"><button class="btn">Програми</button></li>
-        <li class="item"><button class="btn">Дизайн</button></li>
-        <li class="item"><button class="btn">Маркетинг</button></li>
+        <li class="item"><button class="btn" type="button">Всі</button></li>
+        <li class="item"><button class="btn" type="button">Веб-сайти</button></li>
+        <li class="item"><button class="btn" type="button">Програми</button></li>
+        <li class="item"><button class="btn" type="button">Дизайн</button></li>
+        <li class="item"><button class="btn" type="button">Маркетинг</button></li>
       </ul>
 
 
@@ -72,7 +93,23 @@
         <ul class="main-list">
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio1.jpg" alt="laptop">
+
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk1.jpg 1x,
+                  ./images/portfolio/desktop/img_desk1@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab1.jpg 1x,
+                  ./images/portfolio/tablet/img_tab1@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob1.jpg 1x,
+                  ./images/portfolio/mobile/img_mob1@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk1@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -84,7 +121,24 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio2.jpg" alt="laptop">
+
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk2.jpg 1x,
+                  ./images/portfolio/desktop/img_desk2@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab2.jpg 1x,
+                  ./images/portfolio/tablet/img_tab2@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob2.jpg 1x,
+                  ./images/portfolio/mobile/img_mob2@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk2@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
+
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -96,7 +150,23 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio3.jpg" alt="laptop">
+
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk3.jpg 1x,
+                  ./images/portfolio/desktop/img_desk3@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab3.jpg 1x,
+                  ./images/portfolio/tablet/img_tab3@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob3.jpg 1x,
+                  ./images/portfolio/mobile/img_mob3@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk3@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -108,7 +178,22 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio4.jpg" alt="laptop">
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk4.jpg 1x,
+                  ./images/portfolio/desktop/img_desk4@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab4.jpg 1x,
+                  ./images/portfolio/tablet/img_tab4@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob4.jpg 1x,
+                  ./images/portfolio/mobile/img_mob4@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk4@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -120,7 +205,22 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio5.jpg" alt="laptop">
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk5.jpg 1x,
+                  ./images/portfolio/desktop/img_desk5@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab5.jpg 1x,
+                  ./images/portfolio/tablet/img_tab5@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob5.jpg 1x,
+                  ./images/portfolio/mobile/img_mob5@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk5@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -132,7 +232,22 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio6.jpg" alt="laptop">
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk6.jpg 1x,
+                  ./images/portfolio/desktop/img_desk6@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab6.jpg 1x,
+                  ./images/portfolio/tablet/img_tab6@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob6.jpg 1x,
+                  ./images/portfolio/mobile/img_mob6@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk6@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -144,7 +259,22 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio7.jpg" alt="laptop">
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk7.jpg 1x,
+                  ./images/portfolio/desktop/img_desk7@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab7.jpg 1x,
+                  ./images/portfolio/tablet/img_tab7@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob7.jpg 1x,
+                  ./images/portfolio/mobile/img_mob7@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk7@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -156,7 +286,22 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio8.jpg" alt="laptop">
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk8.jpg 1x,
+                  ./images/portfolio/desktop/img_desk8@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab8.jpg 1x,
+                  ./images/portfolio/tablet/img_tab8@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob8.jpg 1x,
+                  ./images/portfolio/mobile/img_mob8@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk8@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -168,7 +313,22 @@
             </a></li>
           <li class="main-item"><a href="" class="link">
               <div class="wrapper-img">
-                <img class="userpic" src="./portfolio/portfolio9.jpg" alt="laptop">
+                <picture>
+                  <source
+                  srcset="./images/portfolio/desktop/img_desk9.jpg 1x,
+                  ./images/portfolio/desktop/img_desk9@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                  <source
+                  srcset="./images/portfolio/tablet/img_tab9.jpg 1x,
+                  ./images/portfolio/tablet/img_tab9@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/portfolio/mobile/img_mob9.jpg 1x,
+                  ./images/portfolio/mobile/img_mob9@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                  <img src="./images/portfolio/desktop/img_desk9@2x.jpg" alt="Технокряк"
+                  width="450" height="294">
+                </picture>
                 <p class="text-hidden">Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують
                   цю платформу для цифрового шпигунства та
                   атак на захищені сервери конкурентів.</p>
@@ -188,20 +348,28 @@
 
 
   <footer class="footer">
-    <div class="container footer-wraper">
+    <div class="container footer-wrapper">
 
-      <div class="address-wraper">
+      <!--wrapper for logo and address-->
+      <div class="logo-address-wrap">
+        <!--footer-logo-->
+      <div class="footer-logo-wrapper">
         <a class="footer-logo" href="./index.html"><span class="logo-blue">Web </span><span
-            class="logo-white">Studio</span></a>
+          class="logo-white"> Studio</span></a>
+      </div>
+      
+      <!--address-->
+      <div class="address-wrapper">
         <address class="footer-address">
-          <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+          <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
           <a class="item mail" href="mailto:info@devstudio.com">info@example.com</a>
           <a class="item" href="tel:+380991111111">+38 067 111 11 11</a>
         </address>
       </div>
+      
+      </div>
 
-
-
+    <!--join-social-->
       <div class="join-social">
         <p class="join-title">ПРИЄДНУЙТЕСЯ</p>
         <ul class="join-list">
@@ -225,9 +393,10 @@
         </ul>
       </div>
 
+      <!--subscribe-->
       <div class="subscribe">
         <b class="subscribe-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
-        <div class="subscribe-wraper">
+        <div class="subscribe-wrapper">
           <input type="email" class="subscribe-input" placeholder="  E-mail">
           <button class="subscribe-button" type="button">
             <span class="subscribe-button-text">Підписатися</span>
@@ -242,7 +411,28 @@
 
 
 
+<script>
+    const refs = {
+      openModalBtn: document.querySelector("[data-open-modal]"),
+      closeModalBtn: document.querySelector("[data-close-modal]"),
+      backdrop: document.querySelector("[data-backdrop]"),
+    };
 
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+      refs.backdrop.classList.toggle("is-hidden");
+    }
+
+    function logBackdropClick() {
+      console.log("Это клик в бекдроп");
+    }
+  </script>
+
+  <script src="./js/menu.js"></script>
 
 
 

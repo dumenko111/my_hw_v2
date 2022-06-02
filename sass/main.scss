@@ -1,5 +1,6 @@
 @import "./base/normalize";
 @import "./components/components";
+@import "./components/container";
 @import "./utils/variables";
 @import "./layout/header";
 @import "./layout/section-hero";
@@ -8,6 +9,10 @@
 @import "./layout/section-team";
 @import "./layout/section-clients";
 @import "./layout/footer";
-@import "./modal/modal";
 @import "./layout/portfolio-buttons";
 @import "./layout/portfolio-gallery";
+@import "./modal/modal";
+@import "./utils/breakpoints";
+
+
+

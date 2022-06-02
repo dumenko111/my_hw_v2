@@ -1,23 +1,28 @@
 /*------PORTFOLIO---------*/
-
-
+/*=======BUTTONS==========*/
 .radio {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding-top: 93px;
-    padding-bottom: 50px;
-}
+    padding-top: 40px;
+    padding-bottom: 40px;
 
+    @media screen and (min-width:768px){
+        padding-bottom: 30px; }
+}
+.radio> .item {
+    @media screen and (max-width:767px) {
+        margin: 5px;
+    }
+}
+@media screen and (min-width:768px){
 .radio>.item:not(:last-child) {
-    margin-right: 8px;
-}
-
-.btn {
-    display: block;
+    margin-right: 8px;}
 }
 
 .radio .btn {
+    display: block;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
