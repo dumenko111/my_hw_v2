@@ -16,7 +16,9 @@
         height: auto;
     }
 }
-
+.link {
+    text-decoration: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 .main-item:not(:nth-child(2n)) {
     margin-right: 30px;}
@@ -27,7 +29,6 @@
 }
 .main-list> .link {
     display: block;
-    text-decoration: none;
 }
 @media screen and (min-width: 1200px) {
 .main-item {
@@ -38,24 +39,7 @@
 .main-list> .main-item:not(:last-child) {
     margin-bottom: 30px;
 }
-// @media screen and (min-width: 1200px) {
-// .main-item:nth-child(n + 7) {
-//     margin-bottom: 0;}
-// }
-// .main-list>.main-item {
-//     @media screen and (min-width:768px){
-//         display: flex;
-//         flex-wrap: wrap;
-//     }
-// }
-// .main-list .main-item:not(:nth-child(3n)) {
-//     margin-right: 30px;
-// }
 
-// .main-list .main-item:not(:nth-last-child(-n+3)) {
-//     @media screen and (min-width:1200px){
-//     margin-bottom: 30px;}
-// }
 .gallery-text {
     padding: 20px 17px;
     border-left: 1px solid #EEEEEE;
