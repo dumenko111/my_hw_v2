@@ -452,7 +452,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  bottom: 0;
+  bottom: -1px;
   background-color: var(--accent-color);
 }
 
@@ -482,6 +482,13 @@ img {
 @media screen and (min-width: 768px) {
   .address-link {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
